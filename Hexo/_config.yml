@@ -80,7 +80,7 @@ theme: Butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:lxp-zj/lxp-zj.github.io.git
+  repo: git@github.com:lxp-zj/lxp-zj.github.io.git
   branch: master
   
 # hexo-admin authentification
@@ -88,7 +88,7 @@ admin:
   username: Zhao5970
   password_hash: $2a$10$vQnmBENIWQ3LpDqjREoid.CRXQDaLeUAmk2sHyXbKGUA9UiQz/yL2
   secret: +Hexo8023+
-  deployCommand: ./admin_script/hexo-generate.sh
+  deployCommand: 'hexo-generate.bat'
   
 #插件 pluges
 symbols_count_time:
@@ -106,7 +106,7 @@ search:
   format: html
   limit: 10000
 
-permalink: posts/:category/:abbrlink.html
+permalink: /posts/:category/:abbrlink.html
 #abbrlink配置
 abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32
